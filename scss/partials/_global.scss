@@ -1,0 +1,102 @@
+$nitro-blue: #5bacc3;
+$nitro-pink: #fff0ed;
+$graphite: #393939;
+$gray: #909090;
+$light-gray: #f7f7f7;
+$white: #fff;
+
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  text-decoration: $graphite;
+  overflow-x: hidden;
+  margin: 0;
+}
+.intro {
+  background-color: $nitro-pink;
+}
+.nav {
+  @extend .intro;
+  padding-left: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  height: 8rem;
+  &__heading{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: flex-start;
+    &--text{
+      margin-top: 0;
+    }
+  }
+  & * {
+  // display: inline-block;
+  text-decoration: none;
+  color: black;
+  }
+  &__logo {
+  min-width: 3.125rem;
+  width: 5rem;
+  height: 5rem;
+  min-height: 3.125rem;
+    &__link{
+      height: 5rem;
+    }
+  }
+
+  &__link {
+  font-size: 1.3125rem;
+  font-weight: 400;
+  }
+  & > * {
+  margin-top: 1rem;
+  }
+  &__item {
+  margin-left: 2.5rem;
+    &--highlight {
+  color: $nitro-blue;
+    }
+  }
+  &__list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__item{
+    list-style: none;
+    padding-right: 2rem;
+  }
+}
+.button {
+  background-color: transparent;
+  color: $white;
+  padding: 1.25rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.3125rem;
+  font-weight: 700;
+}
+h1,
+h2,
+nav h2 {
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+h3,
+footer h3 {
+  font-size: 2.0625rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 700;
+}
+.products__price {
+  color: $nitro-blue
+}
